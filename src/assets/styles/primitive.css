@@ -1,0 +1,18 @@
+button {
+  cursor: pointer;
+  color: var(--r-fg);
+  background: var(--r-bg);
+  border: thin solid var(--r-border);
+}
+
+button:hover {
+  background: var(--r-accent);
+}
+
+button[data-highlighted='true'] {
+  background: var(--r-primary);
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

@@ -1,0 +1,19 @@
+.header {
+  padding: 0.5rem 0.75rem;
+}
+.header > div {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: thin solid var(--r-border);
+}
+.header a {
+  color: var(--r-fg);
+}
+
+@media (max-width: 600px) {
+  .header > div {
+    padding: 0.5rem 0.75rem;
+  }
+}

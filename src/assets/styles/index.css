@@ -1,0 +1,78 @@
+@import url('./primitive.css');
+
+:root {
+  --font-normal: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --r-black: #333;
+  --r-white: #fffdf7;
+  --r-green-light: #d1efc3;
+  --r-green-light-shade: #f8f8bf;
+  --r-green-dark: #217100;
+  --r-green-dark-shade: #7d7d60;
+  --r-clay: #ebdfd5;
+  --r-red: #cd5c5c;
+
+  --r-fg: var(--r-black);
+  --r-bg: var(--r-white);
+  --r-border: var(--r-black);
+  --r-primary: var(--r-green-light);
+  --r-secondary: var(--r-clay);
+  --r-accent: var(--r-green-light-shade);
+
+  font-family: var(--font-normal);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--r-fg);
+  background-color: var(--r-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+[data-theme='light'] {
+  --r-fg: var(--r-black);
+  --r-bg: var(--r-white);
+  --r-border: var(--r-black);
+  --r-primary: var(--r-green-light);
+  --r-secondary: var(--r-clay);
+  --r-accent: var(--r-green-light-shade);
+}
+
+[data-theme='dark'] {
+  --r-fg: var(--r-white);
+  --r-bg: var(--r-black);
+  --r-border: var(--r-white);
+  --r-primary: var(--r-green-dark);
+  --r-secondary: var(--r-clay);
+  --r-accent: var(--r-green-dark-shade);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100dvh;
+  color: var(--r-fg);
+  background-color: var(--r-bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --r-fg: var(--r-white);
+    --r-bg: var(--r-black);
+    --r-border: var(--r-white);
+    --r-primary: var(--r-green-dark);
+    --r-secondary: var(--r-clay);
+    --r-accent: var(--r-green-dark-shade);
+
+    color: var(--r-fg);
+    background-color: var(--r-bg);
+  }
+}

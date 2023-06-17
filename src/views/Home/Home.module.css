@@ -1,0 +1,49 @@
+.home {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--r-black);
+  background: var(--r-white);
+  font-family: var(--font-mono);
+}
+
+.home > header {
+  position: absolute;
+  top: 4%;
+  display: flex;
+  justify-content: center;
+}
+
+.home > main {
+  width: 80dvw;
+  height: 80dvh;
+  background: var(--r-black);
+  border: thin solid var(--r-black);
+}
+
+.home > footer {
+  position: absolute;
+  bottom: 3%;
+  display: flex;
+  justify-content: center;
+}
+.home > footer ul,
+.home > footer ul li {
+  margin: 0;
+  padding: 0;
+}
+.home > footer ul {
+  display: flex;
+  gap: 1rem;
+}
+.home > footer li {
+  list-style: none;
+}
+.home > footer a {
+  color: var(--r-black);
+  text-decoration: none;
+}
+.home > footer a:visited {
+  color: var(--r-green-dark-shade);
+}
