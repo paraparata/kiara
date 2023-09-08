@@ -2,5 +2,6 @@
 **/out/*
 **/buid/*
 **/dest/*
+**/src-audio/*
 sw.js
 workbox-*.js

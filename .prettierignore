@@ -1,4 +1,5 @@
 node_modules
+src-audio
 .next
 yarn.lock
 package-lock.json
