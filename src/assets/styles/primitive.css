@@ -16,3 +16,7 @@ button[data-highlighted='true'] {
 button:disabled {
   cursor: not-allowed;
 }
+
+textarea {
+  background: var(--r-bg);
+}

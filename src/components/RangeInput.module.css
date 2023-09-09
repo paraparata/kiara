@@ -1,0 +1,7 @@
+.root {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+.root > input {
+  grid-area: last-line / 1 / lastline / lastline;
+}
